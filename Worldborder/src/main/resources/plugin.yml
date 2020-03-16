@@ -1,0 +1,15 @@
+name: Worldborder
+main: dev.nierot.worldborder.App
+version: 0.1
+author: Nierot
+commands:
+   basic:
+      description: This is a demo command.
+      usage: /<command> Yeet
+      permission: Worldborder.basic
+      permission-message: lmao nee
+   wb:
+      description: everything worldborder related
+      usage: /<command> args
+      permission: Worldborder.*
+      permission-message: lmao nee
