@@ -1,60 +1,66 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="dev.nierot.worldborder.AppTest" time="0.075" tests="1" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="dev.nierot.worldborder.AppTest" time="0.047" tests="1" errors="0" skipped="0" failures="0">
   <properties>
-    <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
     <property name="java.specification.version" value="11"/>
-    <property name="sun.cpu.isalist" value=""/>
-    <property name="sun.jnu.encoding" value="UTF-8"/>
-    <property name="java.class.path" value="/home/nierot/dev/mc/nierot-worldborder/Worldborder/target/test-classes:/home/nierot/dev/mc/nierot-worldborder/Worldborder/target/classes:/home/nierot/.m2/repository/junit/junit/4.11/junit-4.11.jar:/home/nierot/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/home/nierot/.m2/repository/org/spigotmc/spigot-api/1.15.1-R0.1-SNAPSHOT/spigot-api-1.15.1-R0.1-SNAPSHOT.jar:/home/nierot/.m2/repository/commons-lang/commons-lang/2.6/commons-lang-2.6.jar:/home/nierot/.m2/repository/com/google/guava/guava/21.0/guava-21.0.jar:/home/nierot/.m2/repository/com/google/code/gson/gson/2.8.0/gson-2.8.0.jar:/home/nierot/.m2/repository/net/md-5/bungeecord-chat/1.13-SNAPSHOT/bungeecord-chat-1.13-SNAPSHOT.jar:/home/nierot/.m2/repository/org/yaml/snakeyaml/1.25/snakeyaml-1.25.jar:/home/nierot/.m2/repository/org/bukkit/bukkit/1.15.1-R0.1-SNAPSHOT/bukkit-1.15.1-R0.1-SNAPSHOT.jar:"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="c:\Users\Niels\Desktop\worldborder-plugin-bukkit\Worldborder\target\test-classes;c:\Users\Niels\Desktop\worldborder-plugin-bukkit\Worldborder\target\classes;C:\Users\Niels\.m2\repository\junit\junit\4.11\junit-4.11.jar;C:\Users\Niels\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\Niels\.m2\repository\org\spigotmc\spigot-api\1.15.1-R0.1-SNAPSHOT\spigot-api-1.15.1-R0.1-SNAPSHOT.jar;C:\Users\Niels\.m2\repository\commons-lang\commons-lang\2.6\commons-lang-2.6.jar;C:\Users\Niels\.m2\repository\com\google\guava\guava\21.0\guava-21.0.jar;C:\Users\Niels\.m2\repository\com\google\code\gson\gson\2.8.0\gson-2.8.0.jar;C:\Users\Niels\.m2\repository\net\md-5\bungeecord-chat\1.13-SNAPSHOT\bungeecord-chat-1.13-SNAPSHOT.jar;C:\Users\Niels\.m2\repository\org\yaml\snakeyaml\1.25\snakeyaml-1.25.jar;C:\Users\Niels\.m2\repository\org\bukkit\bukkit\1.15.1-R0.1-SNAPSHOT\bukkit-1.15.1-R0.1-SNAPSHOT.jar;"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
     <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
     <property name="java.vendor.url" value="http://java.oracle.com/"/>
-    <property name="user.timezone" value=""/>
+    <property name="user.timezone" value="Europe/Berlin"/>
+    <property name="user.country.format" value="NL"/>
     <property name="java.vm.specification.version" value="11"/>
-    <property name="os.name" value="Linux"/>
+    <property name="os.name" value="Windows 10"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="GB"/>
-    <property name="sun.boot.library.path" value="/usr/lib/jvm/java-11-openjdk/lib"/>
-    <property name="sun.java.command" value="/home/nierot/dev/mc/nierot-worldborder/Worldborder/target/surefire/surefirebooter2119428044993873320.jar /home/nierot/dev/mc/nierot-worldborder/Worldborder/target/surefire 2020-03-16T14-27-10_892-jvmRun1 surefire8430423878331525429tmp surefire_03035550933851230365tmp"/>
+    <property name="sun.boot.library.path" value="C:\Progra~1\Java\jdk-11.0.6\bin"/>
+    <property name="sun.java.command" value="C:\Users\Niels\AppData\Local\Temp\surefire2877409755774965605\surefirebooter14339677545451935650.jar C:\Users\Niels\AppData\Local\Temp\surefire2877409755774965605 2020-03-16T16-41-44_501-jvmRun1 surefire11365757573924802107tmp surefire_018015398356396342703tmp"/>
     <property name="jdk.debug" value="release"/>
-    <property name="surefire.test.class.path" value="/home/nierot/dev/mc/nierot-worldborder/Worldborder/target/test-classes:/home/nierot/dev/mc/nierot-worldborder/Worldborder/target/classes:/home/nierot/.m2/repository/junit/junit/4.11/junit-4.11.jar:/home/nierot/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/home/nierot/.m2/repository/org/spigotmc/spigot-api/1.15.1-R0.1-SNAPSHOT/spigot-api-1.15.1-R0.1-SNAPSHOT.jar:/home/nierot/.m2/repository/commons-lang/commons-lang/2.6/commons-lang-2.6.jar:/home/nierot/.m2/repository/com/google/guava/guava/21.0/guava-21.0.jar:/home/nierot/.m2/repository/com/google/code/gson/gson/2.8.0/gson-2.8.0.jar:/home/nierot/.m2/repository/net/md-5/bungeecord-chat/1.13-SNAPSHOT/bungeecord-chat-1.13-SNAPSHOT.jar:/home/nierot/.m2/repository/org/yaml/snakeyaml/1.25/snakeyaml-1.25.jar:/home/nierot/.m2/repository/org/bukkit/bukkit/1.15.1-R0.1-SNAPSHOT/bukkit-1.15.1-R0.1-SNAPSHOT.jar:"/>
+    <property name="surefire.test.class.path" value="c:\Users\Niels\Desktop\worldborder-plugin-bukkit\Worldborder\target\test-classes;c:\Users\Niels\Desktop\worldborder-plugin-bukkit\Worldborder\target\classes;C:\Users\Niels\.m2\repository\junit\junit\4.11\junit-4.11.jar;C:\Users\Niels\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\Niels\.m2\repository\org\spigotmc\spigot-api\1.15.1-R0.1-SNAPSHOT\spigot-api-1.15.1-R0.1-SNAPSHOT.jar;C:\Users\Niels\.m2\repository\commons-lang\commons-lang\2.6\commons-lang-2.6.jar;C:\Users\Niels\.m2\repository\com\google\guava\guava\21.0\guava-21.0.jar;C:\Users\Niels\.m2\repository\com\google\code\gson\gson\2.8.0\gson-2.8.0.jar;C:\Users\Niels\.m2\repository\net\md-5\bungeecord-chat\1.13-SNAPSHOT\bungeecord-chat-1.13-SNAPSHOT.jar;C:\Users\Niels\.m2\repository\org\yaml\snakeyaml\1.25\snakeyaml-1.25.jar;C:\Users\Niels\.m2\repository\org\bukkit\bukkit\1.15.1-R0.1-SNAPSHOT\bukkit-1.15.1-R0.1-SNAPSHOT.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
-    <property name="user.home" value="/home/nierot"/>
+    <property name="user.home" value="C:\Users\Niels"/>
     <property name="user.language" value="en"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="java.version.date" value="2020-01-14"/>
-    <property name="java.home" value="/usr/lib/jvm/java-11-openjdk"/>
-    <property name="file.separator" value="/"/>
-    <property name="basedir" value="/home/nierot/dev/mc/nierot-worldborder/Worldborder"/>
-    <property name="java.vm.compressedOopsMode" value="32-bit"/>
+    <property name="java.home" value="C:\Progra~1\Java\jdk-11.0.6"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="c:\Users\Niels\Desktop\worldborder-plugin-bukkit\Worldborder"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
     <property name="line.separator" value="&#10;"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
-    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="/home/nierot/dev/mc/nierot-worldborder/Worldborder/target/surefire/surefirebooter2119428044993873320.jar"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="surefire.real.class.path" value="C:\Users\Niels\AppData\Local\Temp\surefire2877409755774965605\surefirebooter14339677545451935650.jar"/>
+    <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
-    <property name="java.runtime.version" value="11.0.6+10"/>
-    <property name="user.name" value="nierot"/>
-    <property name="path.separator" value=":"/>
-    <property name="os.version" value="5.4.22-1-MANJARO"/>
-    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
-    <property name="file.encoding" value="UTF-8"/>
-    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
-    <property name="localRepository" value="/home/nierot/.m2/repository"/>
+    <property name="java.runtime.version" value="11.0.6+8-LTS"/>
+    <property name="user.name" value="Niels"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="18.9"/>
+    <property name="localRepository" value="C:\Users\Niels\.m2\repository"/>
     <property name="java.vendor.url.bug" value="http://bugreport.java.com/bugreport/"/>
-    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="java.io.tmpdir" value="C:\Users\Niels\AppData\Local\Temp\"/>
     <property name="java.version" value="11.0.6"/>
-    <property name="user.dir" value="/home/nierot/dev/mc/nierot-worldborder/Worldborder"/>
+    <property name="user.dir" value="c:\Users\Niels\Desktop\worldborder-plugin-bukkit\Worldborder"/>
     <property name="os.arch" value="amd64"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="java.awt.printerjob" value="sun.print.PSPrinterJob"/>
-    <property name="sun.os.patch.level" value="unknown"/>
-    <property name="java.library.path" value="/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="user.language.format" value="nl"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.library.path" value="C:\Progra~1\Java\jdk-11.0.6\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Common Files\Autodesk Shared\;C:\Users\Niels\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\Scripts;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\apache-maven-3.6.3\bin;C:\progra~1\Java\jdk-11.0.6\bin;C:\Users\Niels\AppData\Local\Programs\Python\Python38-32\Scripts\;C:\Users\Niels\AppData\Local\Programs\Python\Python38-32\;C:\Users\Niels\AppData\Local\Microsoft\WindowsApps;;C:\Users\Niels\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\heroku\bin;C:\Users\Niels\AppData\Roaming\npm;."/>
     <property name="java.vendor" value="Oracle Corporation"/>
     <property name="java.vm.info" value="mixed mode"/>
-    <property name="java.vm.version" value="11.0.6+10"/>
+    <property name="java.vm.version" value="11.0.6+8-LTS"/>
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="55.0"/>
   </properties>
-  <testcase name="shouldAnswerWithTrue" classname="dev.nierot.worldborder.AppTest" time="0.004"/>
+  <testcase name="shouldAnswerWithTrue" classname="dev.nierot.worldborder.AppTest" time="0.002"/>
 </testsuite>
