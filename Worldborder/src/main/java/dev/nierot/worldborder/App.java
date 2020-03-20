@@ -157,7 +157,7 @@ public class App extends JavaPlugin {
                 }
             return true;
             } else if (args[0].equals("getsize")) {
-                sender.sendMessage(Integer.toString(getSize()));//Double.toString(Bukkit.getWorld("world").getWorldBorder().getSize()));
+                sender.sendMessage(Integer.toString(getSize()));
                 return true;
             } else if (args[0].equals("gettime")) {
                 sender.sendMessage(Integer.toString(getTime()));
@@ -208,9 +208,7 @@ public class App extends JavaPlugin {
                 this.size = size;
             }
         } catch (SQLException e) {
-            Bukkit.broadcastMessage(e.toString());
-        } catch (Exception f) {
-            sendBroadcast(f.toString());
+            Bukkit.broadcastMessage("Reee");
         }
         return this.size;
     }

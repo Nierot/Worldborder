@@ -78,6 +78,11 @@ public final class Event implements Listener {
     }
 
     @EventHandler
+    public void onQuit(PlayerQuitEvent event) {
+        Bukkit.broadcastMessage(event.getPlayer().getDisplayName() + " is een mietje");
+    }
+
+    @EventHandler
     public void onFishing(PlayerFishEvent event) {
         if (event != null) {
             String name = event.getCaught().getName();
@@ -95,6 +100,23 @@ public final class Event implements Listener {
                     case "Water Bottle":
                         app.sendBroadcast("OMG " + player_name + " heeft fucking monster energy gevangen!!!!!!!!!!!!!! Nu gaat alles sneller!!");
                         app.decrementTime(50);
+                        break;
+                    case "Bow":
+                        app.sendBroadcast(player_name + " heeft een boog gevangen! Power 4 toch?");
+                        app.decrementTime(20);
+                        break;
+                    case "Leather Boots":
+                        app.sendBroadcast(player_name + " heeft nieuwe pattas");
+                        app.decrementTime(20);
+                        break;
+                    case "Fishing Rod":
+                        app.sendBroadcast(player_name + " heeft een fishing rod gevangen Xd");
+                        app.decrementTime(10);
+                        break;
+                    case "Rotten Flesh":
+                        app.sendBroadcast(player_name + " heeft lekker eten gevange xxxxdddd");
+                        app.decrementTime(-40);
+                        break;
                     default:
                         if (name.equalsIgnoreCase("Raw Cod") || name.equalsIgnoreCase("Raw Salmon") || name.equalsIgnoreCase("Tropical Fish")) {
                             app.caughtFish(player_name);
