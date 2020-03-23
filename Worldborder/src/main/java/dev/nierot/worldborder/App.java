@@ -2,9 +2,6 @@ package dev.nierot.worldborder;
 
 import org.bukkit.plugin.java.JavaPlugin;
 
-import java.io.File;
-import java.io.FileWriter;
-import java.io.IOException;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
@@ -12,7 +9,7 @@ import java.sql.SQLException;
 import java.sql.Statement;
 
 import org.bukkit.Bukkit;
-import org.bukkit.World;
+import org.bukkit.ChatColor;
 import org.bukkit.entity.Player;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
@@ -26,10 +23,10 @@ public class App extends JavaPlugin {
     private int size, time;
     public int currentSize, taskID;
 
-    public int time_multiplier = 50;
+    public int time_multiplier = 40;
 
     public void sendBroadcast(String text) {
-        Bukkit.broadcastMessage("[Worldborder] " + text);
+        Bukkit.broadcastMessage(ChatColor.RED + "[Worldborder] " + ChatColor.WHITE + text);
     }
 
     @Override

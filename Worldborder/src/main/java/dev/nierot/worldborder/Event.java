@@ -4,12 +4,18 @@ import org.bukkit.event.Listener;
 import org.bukkit.event.block.BlockBreakEvent;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.player.*;
+import org.bukkit.inventory.meta.EnchantmentStorageMeta;
+import org.bukkit.inventory.meta.ItemMeta;
 
 import dev.nierot.worldborder.Border;
 
 import java.sql.Statement;
+import java.util.ArrayList;
+import java.util.Map;
 
 import org.bukkit.Bukkit;
+import org.bukkit.enchantments.Enchantment;
+import org.bukkit.entity.Item;
 import org.bukkit.entity.Player;
 
 public final class Event implements Listener {
@@ -37,9 +43,10 @@ public final class Event implements Listener {
 
     @EventHandler
     public void onPlayerAdvancementDone(PlayerAdvancementDoneEvent event) {
-        //Player player = event.getPlayer();
-        //Bukkit.broadcastMessage("Dankzij " + player.getName() + " is de worldborder 1 block groter!");
-        //app.incrementSize(1, 100);
+        // Player player = event.getPlayer();
+        // Bukkit.broadcastMessage("Dankzij " + player.getName() + " is de worldborder 1
+        // block groter!");
+        // app.incrementSize(1, 100);
     }
 
     @EventHandler
@@ -52,6 +59,7 @@ public final class Event implements Listener {
         Bukkit.broadcastMessage("Allemaal even bedankt zeggen voor deze top actie!");
         Bukkit.broadcastMessage("--------------------------------------");
         app.decrementBorder(1);
+        app.decrementTime(app.time_multiplier);
     }
 
     @EventHandler
@@ -88,17 +96,20 @@ public final class Event implements Listener {
             String name = event.getCaught().getName();
             String player_name = event.getPlayer().getName();
             if (name != null) {
-                switch(name) {
+                switch (name) {
                     case "Name Tag":
-                        app.sendBroadcast(player_name + " heeft een name tag gevangen! Hierdoor gaat de border sneller!");
+                        app.sendBroadcast(
+                                player_name + " heeft een name tag gevangen! Hierdoor gaat de border sneller!");
                         app.decrementTime(50);
                         break;
                     case "Pufferfish":
-                        app.sendBroadcast(player_name + " heeft een pufferfish gevangen! Dat vind ik maar niks en de border gaat nu langzamer.");
+                        app.sendBroadcast(player_name
+                                + " heeft een pufferfish gevangen! Dat vind ik maar niks en de border gaat nu langzamer.");
                         app.decrementTime(-10);
                         break;
                     case "Water Bottle":
-                        app.sendBroadcast("OMG " + player_name + " heeft fucking monster energy gevangen!!!!!!!!!!!!!! Nu gaat alles sneller!!");
+                        app.sendBroadcast("OMG " + player_name
+                                + " heeft fucking monster energy gevangen!!!!!!!!!!!!!! Nu gaat alles sneller!!");
                         app.decrementTime(50);
                         break;
                     case "Bow":
@@ -116,6 +127,20 @@ public final class Event implements Listener {
                     case "Rotten Flesh":
                         app.sendBroadcast(player_name + " heeft lekker eten gevange xxxxdddd");
                         app.decrementTime(-40);
+                        break;
+                    case "Enchanted Book":
+                        // Map<Enchantment, Integer> enchants = ((EnchantmentStorageMeta) ((Item) event.getCaught()).getItemStack().getItemMeta()).getEnchants();
+                        // //app.sendBroadcast(((Item) event.getCaught()).getItemStack().getItemMeta().getAttributeModifiers().toString());
+                        // app.sendBroadcast(Integer.toString(enchants.size()));
+                        // StringBuilder sb = new StringBuilder();
+                        // for (Map.Entry<Enchantment, Integer> enchant : enchants.entrySet()) {
+                        //     String thisEnchant = enchant.getKey().getKey().getNamespace() + " " + enchant.getValue().toString();
+                        //     app.sendBroadcast(enchant.getKey().getKey().toString());
+                        //     app.sendBroadcast(enchant.getValue().toString());
+                        //     sb.append(thisEnchant + ", ");
+                        // }
+                        app.sendBroadcast(player_name + " heeft een Enchanted Book gevangen!");
+                        app.decrementTime(100);
                         break;
                     default:
                         if (name.equalsIgnoreCase("Raw Cod") || name.equalsIgnoreCase("Raw Salmon") || name.equalsIgnoreCase("Tropical Fish")) {
